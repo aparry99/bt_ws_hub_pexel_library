@@ -1,0 +1,29 @@
+<template>
+          <h1>Image Library</h1>
+          <div class="container">
+            <!--Input box to take input from User-->
+            <input type="text" id="input" class="input" placeholder="Search for Images🔎" value="computer" />
+            <button class="search_btn">Search</button>
+            <!-- <lightning-button class="search_btn" label="Search" onclick={search_btn}></lightning-button> -->
+      
+            <h3 style="text-align: center; margin-top: 40px">Please click on an image to view/download</h3>
+      
+            <!--Images to be displayed here-->
+            <div class="display_images"></div>
+            <!--Button to load more images-->
+            <button id="showmore" class="showmore">Show More</button>
+      
+            <!--Create modal for image onclick-->
+            <div class="modal" id="myModal">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-content modal-body">
+                <img class="modal-img" id="img01" />
+                <button class="download_btn"  type="button">Download</button>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+</template>
